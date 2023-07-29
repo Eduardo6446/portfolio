@@ -16,6 +16,12 @@ El estilo va acorde al html de arriba hacia abajo
     text-decoration: none;
 }
 
+body{
+    background: linear-gradient(245.59deg, #0f3e8d 0%, #08266f 28.53%, #000e53 75.52%);
+}
+
+/*NAVBAR SECTION*/
+
 header{
     position: fixed;
     right: 0;
@@ -27,6 +33,10 @@ header{
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
+}
+
+header a img{
+    width: 33px;
 }
 
 .logo{
@@ -60,6 +70,8 @@ header{
     display: none;
 }
 
+/*HOME SECTION*/
+
 section{
     padding: 0 19%;
 }
@@ -68,7 +80,7 @@ section{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #0f3e8d 0%, #08266f 28.53%, #000e53 75.52%);
+    /*background: linear-gradient(245.59deg, #0f3e8d 0%, #08266f 28.53%, #000e53 75.52%);*/
     position: relative;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -160,6 +172,45 @@ section{
     color:#3673c5;
     transform: translateY(-5px);
 }
+
+
+/*PROJECTS SECTION*/
+
+.proyects{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2rem;
+    align-content: center;
+    padding: 0 12%;
+}
+
+.card{
+    background: white;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px hsla(240, 51%, 68%, 0.2);
+}
+
+.card--colo{
+    border-top: 5px #a01214;
+}
+
+.card_title,.card_text{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.card_icon{
+    padding-left: 5px;
+}
+
+
 
 @media (max-width:1535px) {
     header{
